@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Confirmation</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+
+        <!-- Bootstrap CSS -->
+        {% load static %}
+        <link href="{% static 'capstone/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'capstone/css/bootstrap-grid.min.css' %}" rel="stylesheet">
+        <link href="{% static 'capstone/css/bootstrap-reboot.min.css' %}" rel="stylesheet">
+        <link href="{% static 'capstone/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+	    <link href="{% static 'capstone/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	    <link href="{% static 'capstone/vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+	    <!-- Custom CSS -->
+    	<link href="{% static 'capstone/css/stylish-portfolio.min.css' %}" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<section class="content-section bg-primary text-white text-center" id="services">
+			<div class="container">
+				<div class="content-section-heading">
+					<h1 class="mb-5">Let's Check!</h1>
+					<p class="text-secondary mb-0">Here are your thresholds:</p>
+				</div>
+				<div class="row mt-4">
+		          <div class="col-lg-3 col-md-6 mb-10 mb-lg-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-pencil"></i>
+		            </span>
+		            <h4>
+		              <strong>Employ Readiness</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_1}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10 mb-lg-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-like"></i>
+		            </span>
+		            <h4>
+		              <strong>Customer Satisfaction</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_2}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10 mb-md-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-share"></i>
+		            </span>
+		            <h4>
+		              <strong>Employee Engagement</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_3}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-bulb"></i>
+		            </span>
+		            <h4>
+		              <strong>Knowledge Management</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_4}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10 mb-lg-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-screen-smartphone"></i>
+		            </span>
+		            <h4>
+		              <strong>Technology and Resource Availability</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_5}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10 mb-lg-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-note"></i>
+		            </span>
+		            <h4>
+		              <strong>Technology and Resource Availability: Scalability</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_6}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10 mb-md-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-briefcase"></i>
+		            </span>
+		            <h4>
+		              <strong>Training</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_7}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-key"></i>
+		            </span>
+		            <h4>
+		              <strong>Leadership</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_8}}</h5>
+		          </div>
+		          <div class="col-lg-3 col-md-6 mb-10 mb-md-0" style="padding: 5% 0;">
+		            <span class="service-icon rounded-circle mx-auto mb-3">
+		              <i class="icon-settings"></i>
+		            </span>
+		            <h4>
+		              <strong>Productivity</strong>
+		            </h4>
+		            <h5 class="text-faded mb-0">{{kpi_9}}</h5>
+		          </div>
+		        </div>
+		        <!--
+				<table>
+					<col width="30%">
+					<col width="30%">
+					<tr>
+						<th>KPI</th>
+						<th>Threshold</th>
+					</tr>
+					<tr>
+						<th>Employ Readiness</th>
+						<th>{{kpi_1}}</th>
+					</tr>
+					<tr>
+						<th>Customer Satisfaction</th>
+						<th>{{kpi_2}}</th>
+					</tr>
+					<tr>
+						<th>Employee Engagement</th>
+						<th>{{kpi_3}}</th>
+					</tr>
+					<tr>
+						<th>Knowledge Management</th>
+						<th>{{kpi_4}}</th>
+					</tr>
+					<tr>
+						<th>Technology and Resource Availability</th>
+						<th>{{kpi_5}}</th>
+					</tr>
+					<tr>
+						<th>Technology and Resource Availability: Scalability</th>
+						<th>{{kpi_6}}</th>
+					</tr>
+					<tr>
+						<th>Traning</th>
+						<th>{{kpi_7}}</th>
+					</tr>
+					<tr>
+						<th>Leadership</th>
+						<th>{{kpi_8}}</th>
+					</tr>
+					<tr>
+						<th>Productivity</th>
+						<th>{{kpi_9}}</th>
+					</tr>
+
+					-->
+
+			</div>
+		</section>
+	</body>
+</html>
